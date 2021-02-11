@@ -1,0 +1,39 @@
+body{
+    background-color: rgba(114, 114, 114, 0.473);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: rgb(56, 5, 107);
+    text-shadow: 5px rgb(2, 114, 114);;
+    text-align: center;
+}
+
+#top-of-page{
+    color: rgb(16, 77, 66);
+    font-size: xx-large; 
+    border-bottom: 1px dotted rgb(229, 183, 252);
+    text-align: center;
+}
+
+#mode-text{
+    text-align: center;
+    
+}
+
+#box{
+    text-align: center;
+}
+
+.alert{
+    background-color: #e26242;
+    color: black;
+    
+
+}
+
+
+
+
+.closeButton{
+    
+
+}

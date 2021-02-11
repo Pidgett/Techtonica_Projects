@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+    <title>Guess That Number!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "static/CSS/stylesheet.css">
+    
+    
+</head>
+
+<body>
+<!------------------------------NavBar----------------------------->
+    <div class = "container"><nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand ml-0" href="#">
+            <img src="/static/images/IMG_20210210_235704257.png" width="75" height="75" alt="">
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">More Games!</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Difficulty Level
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="drop-easy" href="#">Easy</a>
+                <a class="drop-medium" href="#">Medium</a>
+                <a class="drop-hard" href="#">Hard</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav></div>
+<!----------------End NavBar--------------------------------------------------------->
+<!------------------------JumboTron------------------------------------------>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4"><span id = "top-of-page"><header>GUESS! THAT! NUMBER!</header></span></h1>
+      <p class="lead">Welcome to my first HTML game project! It's a simple number guessing game with three difficulty levels.</p>
+    </div>
+  </div>
+
+<!------------------------End JumboTron---------------------------------------->
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-xs-12 col-sm- 6 col-md-6 col-lg-4">
+                
+                <br>
+                
+            </div>
+            <br>
+            <div class= "col-xs-12 col-sm- 6 col-md-6 col-lg-4">
+                <span id= "mode-text"><h4>You have 7 guesses to choose the correct number between 1 and 100. Good Luck!</h4></span>
+                <br>
+                <p id= "box"><legend><h5>Type your guess here</h5></legend><input type= "text" id= "guess"></input></p>
+                <p>Guesses remaining:</p><p id="numLeft"> 7 </p>
+            </div>
+            
+            <div id = "col-xs-12 col-sm- 6 col-md-6 col-lg-4">
+
+              <div class="alert">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                This is an alert box.
+              </div>
+
+                <button class= "reset" type="button">New Game</button>
+            <button id= "pigeon" type="button" >Button that turns you into a pigeon.</button>
+          
+            <h4>This is a simple number guessing game. Too easy? Try another <span id= "highlighter">Difficulty</span> or explore
+                some other <span id="highlighter">games</span>!
+            </h4>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="scripts/guessMyNumber.js"></script>
+</body>
