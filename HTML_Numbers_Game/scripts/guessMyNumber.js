@@ -35,20 +35,35 @@ elem1.onclick = changeButton;
 
 let magicNum = [];
 let guesses = [];
-let mode = document.getElementById("mode");
 let remaining = document.getElementById("numLeft");
 
-function reset(mode){
-    if(mode === "Easy"){
+let mode = document.getElementById("mode");
+let eMode = document.getElementById("drop-easy");
+let mMode = document.getElementById("drop-medium");
+let hMode = document.getElementById("drop-hard");
 
+
+//let alert = "Are you sure you wish to reset your progress?";
+let accept = confirm("Are you sure you wish to reset your progress?");
+
+
+function reset(mode){
+    accept;
+    if(accept ===true){
+
+    if(mode === "Easy"){
+        
     } else if(mode === "Medium"){
 
     } else if(mode === "Hard"){
 
     }
 };
+};
 
-
+eMode.onclick = reset(mode);
+mMode.onclick = reset(mode);
+hMode.onclick = reset(mode);
 
 
 
@@ -56,7 +71,11 @@ function reset(mode){
 //1-100
 let eRange = Math.floor(Math.random(10)*100);
 console.log(eRange);
+//Clears guesses array
 
+for(let e = 0; e <= remaining+guesses.length; e++){
+    guesses.pop();
+};
 
 
 
