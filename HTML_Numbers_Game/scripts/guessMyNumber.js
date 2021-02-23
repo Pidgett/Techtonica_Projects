@@ -44,11 +44,11 @@ let hMode = document.getElementById("drop-hard");
 
 
 //let alert = "Are you sure you wish to reset your progress?";
-let accept = confirm("Are you sure you wish to reset your progress?");
+//let accept = ;
 
 
-function reset(mode){
-    accept;
+/*function reset(mode){
+    /*accept;
     if(accept ===true){
 
     if(mode === "Easy"){
@@ -61,6 +61,8 @@ function reset(mode){
 };
 };
 
+//Debugging other reset function
+*/
 eMode.onclick = reset(mode);
 mMode.onclick = reset(mode);
 hMode.onclick = reset(mode);
@@ -92,3 +94,18 @@ console.log(mRange);
 let hRange = Math.floor(Math.random(10)*10000);
 console.log(hRange);
 
+function resetTest(){
+    let accept = true;
+    if(accept === true){
+        confirm("Are you sure you wish to reset your progress?");
+        if(mode === "easy"){
+            eRange;
+            guesses = [];
+        }
+    }else{
+        console.log("Ok!");
+    }
+}
+
+let button1 = document.getElementById("reset");
+button1.onclick = resetTest;

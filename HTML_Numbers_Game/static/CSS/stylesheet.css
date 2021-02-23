@@ -18,7 +18,16 @@ body{
     text-align: center;
     
 }
+#birb{
+    width: 30%;
+    length: 30%;
+}
 
+#nest{
+    width:20%;
+    length:25%;
+
+}
 #box{
     text-align: center;
 }
@@ -30,7 +39,9 @@ body{
 
 }
 
-
+.buttons{
+    text-align: center;
+}
 
 
 .closeButton{
