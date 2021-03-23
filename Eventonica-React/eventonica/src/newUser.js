@@ -11,8 +11,8 @@ const NewUser = () => {
     
     return (
       <>
-        <form>
-          <label value="firstName">Name: 
+        <form className="new" style={ {border:"2px solid purple", backgroundColor:"rosybrown"}}>
+          <label htmlFor="firstName">Name: 
             <input type = "text"
              placeholder="First Name"
               required
@@ -20,7 +20,7 @@ const NewUser = () => {
             />
           </label>
             <span> </span>
-          <label value="lastName">
+          <label htmlFor="lastName">
             <input type = "text"
              placeholder="Last Name"
               required
@@ -28,7 +28,15 @@ const NewUser = () => {
             />
           </label>
           <br></br>
-          <label value="city">City
+          <label htmlFor="email">
+          <input type = "text"
+             placeholder="E-mail"
+              required
+               onChange = {(e) => { console.log(lastName); setLastName(e.target.value)}} 
+            />
+          </label>
+          <br></br>
+          <label htmlFor="city">City
             <select id = "city"
              onChange = {(e) => { console.log(city); setCity(e.target.value)}}
             >
@@ -51,6 +59,11 @@ const NewUser = () => {
 
             </select>
           </label>
+          <br></br>
+          <button className="Submit"
+                >
+                    Submit
+                </button>
         </form>
         </>
     );

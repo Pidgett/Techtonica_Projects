@@ -11,49 +11,50 @@ const NewEvent = () => {
 */
     return(
         <>
-        <div className="createEvent">
-        <form>
-            <label htmlFor="name">Event Name
+        
+        <div className="createEvent" style={ {border:"2px solid purple", backgroundColor:"rosybrown"}}>
+        <form className="new">
+            <label htmlFor="name" className="label">Event Name
                 <input type="text"
                 placeholder="Type Event Name Here"
                 required
                 />
             </label>
             <br></br>
-            <label htmlFor="date">Date
+            <label htmlFor="date" className="label">Date
                 <input type="date"
                 placeholder="Choose Date"
                 required
                 />
             </label>
             <br></br>
-            <label htmlFor="location">Location
+            <label htmlFor="location" className="label">Location
                 <input type="text"
                 placeholder="Type Event Name Here"
                 required
                 />
             </label>
             <br></br>
-            <label htmlFor="category">Category
+            <label htmlFor="category" className="label">Category
                 <input type="text"
                 placeholder="What kind of event is this?"
                 />
             </label>
             <br></br>
-            <label htmlFor="summary">
+            <label htmlFor="summary" className="label">
                 <textarea className="summary"
                  placeholder="Type your event description here"
                  />
             </label>
             <br></br>
-            <label htmlFor="public">Is this event public or private?
+            <label htmlFor="public" className="label">Is this event public or private?
             <br></br>
             <input type="radio"
             name="public?"
             value="Public"
             />Public
             </label>
-            <label htmlFor="private">
+            <label htmlFor="private" className="label">
             <input type="radio"
             name="public?"
             value="Private"
@@ -61,7 +62,7 @@ const NewEvent = () => {
             </label>
             <br></br>
             <div className="Submit">
-            <label htmlFor="Submit">
+            <label htmlFor="Submit" className="label">
                 <button className="Submit"
                 >
                     Submit
@@ -70,6 +71,7 @@ const NewEvent = () => {
             </div>
         </form>
         </div>
+        
         </>
     )
 }
